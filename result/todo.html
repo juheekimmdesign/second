@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>To Do list</title>
+    <link rel="shortcut icon" href="../images/todo_favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <h1><a href="./todo.html">To Do</a></h1>
+            <div id="gnb">
+                <!-- #이름: <a href="#search">검색</a>  #옆에 이름을 쓰면 아이디란 의미 -->
+                <!-- #: <a href="#">검색</a> (연결파일이 준비되지 않은 경우) 임시링크인 경우 링크가 만들어지면 #표시 지워야함 -->
+                <!-- (X) <a href="#./index.html"></a> (O) <a href="./index.html"></a> -->
+                <h2><a href="#"><img src="./todo_images/search.png" art="검색하기"></a></h2>
+                <h2><a href="#"><img src="./todo_images/menu.png" art="전체메뉴보기"></a></h2>
+            </div>
+        </div>
+        <div class="tab_menu">
+            <h2><a href="#all_con">All(3)</a></h2>
+            <h2><a href="#">Today(0)</a></h2>
+        </div>
+        <div class="tab_contents" id="all_con">
+            <div class="contents">
+                <a href="#" class="date">12.31</a>
+                <a href="#">매일 책 15분 읽기 목표</a>
+            </div>
+            <div class="contents2">
+                <a href="#" class="date">12.31</a>
+                <a href="#">치과 스케일링하기</a>
+            </div>
+            <div class="contents3">
+                <a href="#" class="date">12.31</a>
+                <a href="#">새해 다이어리 구입하기</a>
+            </div>
+        </div>
+        <div id="wite_wrap">
+            <p class="contents">add a new tesk</p>
+            <a href="#" id="confirm_btn"><img src="./todo_images/enter.png" art="등록하기"></a>
+        </div>
+        <a href="#" id="write_fab"><img src="./todo_images/new_btn_disable.png" art="할일등록하기"></a>
+        <!-- fab == floating action button -->
+    </div>
+    <hr>
+    <!-- 복습용 -->
+    <!-- <div id="wrap">
+        <div id="header">
+            <h1>To Do</h1>
+            <div id="gnb">
+                <h2>검색</h2>
+                <h2>메뉴</h2>
+            </div>
+        </div>
+        <div class="tab_menu">
+            <h2>All(3)</h2>
+            <h2>Today(0)</h2>
+        </div>
+        <div class="tab_contents">
+            <div class="contents1">
+                <p class="date">01.20.Tue</p>
+                <p>회원증 꼭 챙기기</p>
+            </div>
+            <div class="contents2">
+                <p class="date">01.20.Tue</p>
+                <p>자유 수영 가기</p>
+            </div>
+            <div class="contents3">
+                <p class="date">01.21.Wed</p>
+                <p>세탁소에서 코트 찾아오기</p>
+            </div>
+        </div>
+        <div class="write_wrap">
+            <p>add a new task</p>
+            <p id="confirm_btn">등록</p>
+        </div>
+        <h2 id="write_fab">할일등록</h2>
+    </div> -->
+</body>
+</html>
